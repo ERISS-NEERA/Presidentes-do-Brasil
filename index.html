@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Presidencial: 1964-2022</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="quiz-header">
+        <h1>Quiz: Quem Fez História? (1964-2022)</h1>
+        <p>Associe o evento histórico ao presidente correto.</p>
+    </header>
+
+    <main class="main-content-wrapper">
+    
+    <div class="quiz-container">
+        
+        <section class="question-area">
+            <div id="status-display">Questão <span id="current-q">1</span> de <span id="total-q">90</span></div>
+            <h2 id="question-text">Carregando pergunta...</h2>
+        </section>
+
+        <section id="options-area" class="options-grid">
+            <p>Carregando presidentes...</p>
+        </section>
+
+        <section class="controls-area">
+            <div id="feedback-message" class="message"></div>
+            <button id="next-button" disabled>Próxima Questão →</button>
+        </section>
+        
+    </div>
+
+    <aside class="stats-sidebar">
+        <h3>Análise de Desempenho</h3>
+        <div class="stat-group">
+            <p class="stat-label">Total de Questões Feitas:</p>
+            <p id="stat-total" class="stat-value primary">0</p>
+        </div>
+        <div class="stat-group">
+            <p class="stat-label">Acertos:</p>
+            <p id="stat-correct" class="stat-value success">0</p>
+        </div>
+        <div class="stat-group">
+            <p class="stat-label">Erros:</p>
+            <p id="stat-incorrect" class="stat-value error">0</p>
+        </div>
+        <div class="stat-group large">
+            <p class="stat-label">Taxa de Acerto:</p>
+            <p id="stat-percentage" class="stat-value accent">0.0%</p>
+        </div>
+    </aside>
+
+</main>
+
+    <script src="./data/questions.js"></script> <script src="script.js"></script>
+</body>
+</html>
