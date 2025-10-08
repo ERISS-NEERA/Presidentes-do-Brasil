@@ -129,7 +129,7 @@ function renderPresidentOptions() {
         card.setAttribute('data-id', president.id);
         
         card.innerHTML = `
-            <img src="img/${president.id}.jpg" alt="Foto de ${president.nome}">
+            <img src="${president.id}.jpg" alt="Foto de ${president.nome}">
             <p>${president.nome}</p>
         `;
         
@@ -228,4 +228,5 @@ function handleNextQuestion() {
 
 
 // --- INICIALIZAÇÃO DA APLICAÇÃO ---
+
 document.addEventListener('DOMContentLoaded', initializeQuiz);
